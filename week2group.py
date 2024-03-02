@@ -26,5 +26,20 @@ class ParkingGarage:
                 self.ticket.append(ticket)
             else:
                 print('Invalid ticket number. Please check and try again.')
+    
+    def run(self):
+        while True:
+            menu = input("Would you like to take a ticket, pay for parking, or leave the garage? ")
+            if menu == 'take a ticket':
+                self.takeTicket
+            elif menu == 'pay for parking':
+                 self.pay_for_parking
+            elif menu == "leave the garage":
+                 self.leavegarage
+                 break
+            else:
+                print("Not a valid input, please try again. ")
 
 parking_garage = ParkingGarage(10, 10)
+
+parking_garage.run()
